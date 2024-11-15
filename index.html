@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Todo List</h1>
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Nueva tarea">
+            <button id="add-task-button">Agregar</button>
+        </div>
+        <div class="summary-section">
+            <p>Total: <span id="total-tasks">0</span></p>
+            <p>Realizadas: <span id="completed-tasks">0</span></p>
+        </div>
+        <table class="tasks-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tarea</th>
+                    <th>Completada</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="tasks-list">
+                <tr>
+                    <td>1</td>
+                    <td>Diseño Gráfico</td>
+                    <td><input type="checkbox"></td>
+                    <td><button class="delete-task">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="completed-task">Developer Front-end</td>
+                    <td><input type="checkbox" checked></td>
+                    <td><button class="delete-task">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Diseño UX/UI</td>
+                    <td><input type="checkbox"></td>
+                    <td><button class="delete-task">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
